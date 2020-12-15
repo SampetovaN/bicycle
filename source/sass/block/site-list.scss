@@ -1,0 +1,19 @@
+.site-list__item {
+  @include text-sets(16px, 32px, 600);
+
+  a {
+    color: #ffffff;
+
+    @include set-hover(#ffffff);
+  }
+
+  @media (max-width: $width-desktop) {
+    @include text-sets(20px, 28px, 400);
+
+    a {
+      color: #48494d;
+
+      @include set-hover(#48494d);
+    }
+  }
+}

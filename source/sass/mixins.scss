@@ -1,0 +1,46 @@
+@mixin text-sets($size, $height, $weight:normal) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin reset-el {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin wrapper-reset {
+  padding: 0;
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin list-refresh {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin set-hover($color) {
+  &:hover,
+  &:focus {
+    color: rgba($color, 0.6);
+  }
+
+  &:active {
+    color: rgba($color, 0.3);
+  }
+}
+
+@mixin text-correct($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}

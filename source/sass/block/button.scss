@@ -1,0 +1,20 @@
+.button {
+  @include text-sets(15px,21px,600);
+  color: #000000;
+  background-color: $button-color;
+
+  @include set-hover(#000000);
+
+  &:hover,
+  &:focus {
+    background-color: rgba(red($button-color), green($button-color), blue($button-color), 0.6);
+  }
+
+  &:active {
+    background-color: rgba(red($button-color), green($button-color), blue($button-color), 0.3);
+  }
+  font-family: inherit;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}

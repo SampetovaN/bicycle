@@ -1,0 +1,19 @@
+.contacts {
+  h2 {
+    @include text-sets(30px,30px,600);
+    color: #1f1f1f;
+
+    @media (max-width: $width-laptop) {
+      font-size: 24px;
+    }
+  }
+
+  p {
+    @include text-sets(17px,31px,normal);
+    color: rgba(#000000, 0.7);
+
+    @media (max-width: $width-desktop) {
+      @include text-correct(24px,41px);
+    }
+  }
+}

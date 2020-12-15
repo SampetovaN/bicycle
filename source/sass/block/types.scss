@@ -1,0 +1,17 @@
+.types {
+  h2 {
+    @include text-sets(30px,30px,normal);
+    color: #1f1f1f;
+
+    @media (max-width: $width-desktop) {
+      @include text-correct(24px,41px);
+    }
+  }
+}
+
+.types__list {
+  figcaption {
+    @include text-sets(22px,34px,600);
+    color: #000000;
+  }
+}

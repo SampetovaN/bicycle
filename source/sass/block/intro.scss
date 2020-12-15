@@ -1,0 +1,31 @@
+.intro {
+  h1 {
+    @include text-sets(46px,64px,bold);
+    color: #ffffff;
+
+    @media (max-width: $width-desktop) {
+      @include text-correct(30px,42px);
+    }
+  }
+
+  p {
+    @include text-sets(20px,32px,300);
+    color: rgba(#ffffff, 0.8);
+
+    @media (max-width: $width-desktop) {
+      font-size: 18px;
+    }
+  }
+}
+
+.intro__form {
+  p {
+    @include text-sets(17px,28px,600);
+    color: #ffffff;
+
+    @media (max-width: $width-desktop) {
+      color: #000000;
+      font-size: 18px;
+    }
+  }
+}

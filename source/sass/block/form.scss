@@ -1,0 +1,10 @@
+.form__field {
+  input {
+    cursor: pointer;
+
+    &::placeholder {
+      @include text-sets(15px,24px,normal);
+      color: rgba(#1c1c1c, 0.6);
+    }
+  }
+}

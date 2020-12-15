@@ -1,0 +1,28 @@
+.about {
+  h2 {
+    @include text-sets(30px,30px,600);
+    color: #1f1f1f;
+
+    @media (max-width: $width-desktop) {
+      @include text-correct(24px,41px);
+    }
+  }
+}
+
+.about__facts {
+  @include list-refresh;
+
+  span {
+    @include text-sets(28px,38px,bold);
+    color: #0ad9c6;
+  }
+
+  p {
+    @include text-sets(22px,34px,normal);
+    color: #000000;
+
+    @media (max-width: $width-laptop) {
+      font-size: 18px;
+    }
+  }
+}
