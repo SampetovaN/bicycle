@@ -7,14 +7,17 @@
 
   &:hover,
   &:focus {
+    outline: none;
     background-color: rgba(red($button-color), green($button-color), blue($button-color), 0.6);
   }
 
   &:active {
+    outline: none;
     background-color: rgba(red($button-color), green($button-color), blue($button-color), 0.3);
   }
   font-family: inherit;
   text-align: center;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
 }

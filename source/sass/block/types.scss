@@ -1,7 +1,10 @@
 .types {
+  background-color: #f6f7f9;
+
   h2 {
-    @include text-sets(30px,30px,normal);
+    @include text-sets(30px,30px,600);
     color: #1f1f1f;
+    text-align: center;
 
     @media (max-width: $width-desktop) {
       @include text-correct(24px,41px);
@@ -9,9 +12,129 @@
   }
 }
 
+.types__wrapper {
+  margin: 0 auto;
+  width: 84%;
+  max-width: 1700px;
+  padding: 0 20px;
+
+  @media (max-width: $width-desktop) {
+    width: auto;
+    padding: 0 1%;
+  }
+}
+
 .types__list {
+  @include list-refresh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 0 12.3% 43px;
+  margin-bottom: 0;
+
+  @media (max-width: $width-desktop) {
+    justify-content: center;
+    padding-bottom: 0;
+  }
+}
+
+.types__figure {
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
   figcaption {
     @include text-sets(22px,34px,600);
     color: #000000;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+.types__item {
+  margin-top: 34px;
+  position: relative;
+
+  &:nth-child(3n+1) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/ellipse.svg");
+      background-repeat: no-repeat;
+      left: -17%;
+      right: 0;
+      top: 24%;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
+
+  &:nth-child(2n) {
+    margin-top: 5%;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/rectangle.svg");
+      background-repeat: no-repeat;
+
+      z-index: 2;
+    }
+
+    &::before {
+      right: 0;
+      bottom: 0;
+      left: -5%;
+      top: -2%;
+    }
+
+    &::after {
+      right: 0;
+      bottom: 0;
+      left: 83%;
+      top: 88%;
+    }
+
+    @media (max-width: $width-desktop) {
+      position: static;
+      margin-top: 0;
+
+      &::before,
+      &::after {
+        position: static;
+        display: none;
+      }
+    }
+  }
+
+  &:nth-child(3n) {
+    margin-top: 2%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/ellipse.svg");
+      background-repeat: no-repeat;
+      right: 0;
+      bottom: 0;
+      transform: scale(0.5);
+      left: 61%;
+      top: -39%;
+      width: 53%;
+    }
+
+    @media (max-width: $width-desktop) {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: $width-desktop) {
+    margin: 0 0 7%;
   }
 }

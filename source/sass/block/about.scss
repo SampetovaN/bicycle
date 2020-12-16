@@ -1,28 +1,67 @@
 .about {
+  margin: 0 auto;
+  width: 84%;
+  max-width: 2000px;
+  padding: 0 20px;
+
   h2 {
-    @include text-sets(30px,30px,600);
+    @include text-sets(30px, 30px, 600);
     color: #1f1f1f;
+    margin: 0 auto 4%;
+    text-align: center;
 
     @media (max-width: $width-desktop) {
-      @include text-correct(24px,41px);
+      @include text-correct(24px, 41px);
     }
+  }
+
+  @media (max-width: $width-desktop) {
+    padding: 0 13%;
+    width: auto;
   }
 }
 
 .about__facts {
   @include list-refresh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 23%;
+
+  @media (max-width: $width-desktop) {
+    margin: 0 0 16%;
+  }
+}
+
+.about__fact {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1%;
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   span {
-    @include text-sets(28px,38px,bold);
+    @include text-sets(28px, 38px, bold);
     color: #0ad9c6;
   }
 
   p {
-    @include text-sets(22px,34px,normal);
+    @include text-sets(22px, 34px, normal);
     color: #000000;
+    text-align: center;
+    margin-top: 7%;
 
     @media (max-width: $width-laptop) {
       font-size: 18px;
     }
+  }
+
+  @media (max-width: $width-desktop) {
+    width: 35%;
   }
 }

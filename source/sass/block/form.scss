@@ -1,10 +1,28 @@
+
 .form__field {
+  margin-bottom: 25px;
+
   input {
     cursor: pointer;
+    border: 1px solid #c9ccd4;
+    border-radius: 4px;
+    padding-left: 29px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
 
     &::placeholder {
       @include text-sets(15px,24px,normal);
       color: rgba(#1c1c1c, 0.6);
     }
   }
+}
+
+.form__button {
+  display: block;
+  padding-left: 8px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  width: 100%;
 }

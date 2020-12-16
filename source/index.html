@@ -19,21 +19,21 @@
   <div class="content__main">
     <header class="header">
       <div class="header__wrapper">
-        <nav class="main-nav main-nav--nojs">
-          <a class="main-nav__logo">
-              <img src="img/logo.svg" width="67" height="20" alt="Логотип Moon">
-          </a>
-          <!-- main-nav__toggle--closed - меню закрыто/иконка гамбургера  main-nav__toggle--opened - меню открыто/иконка крестика-->
-          <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия меню"></button>
-          <!--  main-nav__nav-list--closed - меню закрыто  main-nav__nav-list - меню открыто (состояние по умолчанию)-->
-          <ul class="main-nav__nav-list site-list">
-            <li class="site-list__item"><a href="#about-us">О нас</a></li>
-            <li class="site-list__item"><a href="#bike-types">Виды велосипедов</a></li>
-            <li class="site-list__item"><a href="#bike-video">Видео про велосипеды</a></li>
-            <li class="site-list__item"><a href="#contact-us">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="main-nav">
+        <a class="main-nav__logo">
+            <img src="img/logo.svg" width="67" height="20" alt="Логотип Moon">
+        </a>
+        <!-- main-nav__toggle--closed - меню закрыто/иконка гамбургера  main-nav__toggle--opened - меню открыто/иконка крестика-->
+        <button class="main-nav__toggle main-nav__toggle--closed" type="button" aria-label="Кнопка открытия меню"></button>
+        <!--  main-nav__nav-list--closed - меню закрыто  main-nav__nav-list - меню открыто (состояние по умолчанию)-->
+        <ul class="main-nav__nav-list site-list">
+          <li class="site-list__item"><a href="#about-us">О нас</a></li>
+          <li class="site-list__item"><a href="#bike-types">Виды велосипедов</a></li>
+          <li class="site-list__item"><a href="#bike-video">Видео про велосипеды</a></li>
+          <li class="site-list__item"><a href="#contact-us">Контакты</a></li>
+        </ul>
+      </nav>
+        </div>
     </header>
     <main class="main">
       <section class="intro">
@@ -62,7 +62,6 @@
         </div>
       </section>
       <section class="about" id="about-us">
-        <div class="about__wrapper">
           <h2>Несколько фактов о нас</h2>
           <ul class="about__facts">
             <li class="about__fact">
@@ -82,7 +81,6 @@
               <p>Профессиональные консультации!</p>
             </li>
           </ul>
-        </div>
       </section>
       <section class="types" id="bike-types">
         <div class="types__wrapper">
@@ -153,31 +151,29 @@
           </div>
         </div>
       </section>
-      <section class="contacts" id="contact-us">
-        <div class="contacts__wrapper">
-          <h2>Как нас найти?</h2>
-          <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-          <div class="contacts__map-wrapper" aria-label="улица Большая Конюшенная, дом 19, город Санкт-Петербург"></div>
-          </div>
-      </section>
     </main>
   </div>
-  <footer class="footer">
-    <div class="footer__wrapper">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <ul class="footer__contacts connect">
-          <li class="connect__item"><a href="mailto:puteshestviemechta@gmail.ru">
+  <footer class="footer" id="contact-us">
+      <section class="address">
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <div class="address__map-wrapper" aria-label="улица Большая Конюшенная, дом 19, город Санкт-Петербург"></div>
+      </section>
+      <section class="contacts">
+        <h2 class="visually-hidden">Наши Koнтакты</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item"><a class="contacts__link" href="mailto:puteshestviemechta@gmail.ru">
             <svg width="26" height="20">
               <use xlink:href="#sprite-mail"></use>
             </svg>
             puteshestviemechta@gmail.ru</a></li>
-          <li class="connect__item connect__item--phone"><a href="tel:+749978468446">
+          <li class="contacts__item contacts__item--phone"><a class="contacts__link" href="tel:+749978468446">
             <svg width="22" height="24">
               <use xlink:href="#sprite-phone"></use>
             </svg>
             +7 (499)-784-684-46</a></li>
         </ul>
-    </div>
+      </section>
   </footer>
 </div>
 <script src="js/vendor.js"></script>
