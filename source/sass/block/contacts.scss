@@ -2,7 +2,17 @@
   margin: 0 auto;
   width: 84%;
   max-width: 1700px;
-  padding-bottom: 50px;
+  padding: 0 20px 50px;
+
+  @media (max-width: $width-desktop) {
+    padding: 0 5% 50px;
+  }
+
+  @media (max-width: $width-laptop) {
+    width: auto;
+    padding-left: 9%;
+    padding-right: 8%;
+  }
 }
 
 .contacts__list {
@@ -15,6 +25,17 @@
   padding: 0;
   max-width: 800px;
   min-width: 541px;
+
+  @media (max-width: $width-desktop) {
+    width: 87%;
+  }
+
+  @media (max-width: $width-laptop) {
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-width: 0;
+  }
 }
 
 .contacts__item {
@@ -36,6 +57,14 @@
 
   svg {
     margin-right: 8px;
+  }
+
+  @media (max-width: $width-laptop) {
+    margin-bottom: 8%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

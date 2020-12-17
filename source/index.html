@@ -26,7 +26,7 @@
         <!-- main-nav__toggle--closed - меню закрыто/иконка гамбургера  main-nav__toggle--opened - меню открыто/иконка крестика-->
         <button class="main-nav__toggle main-nav__toggle--closed" type="button" aria-label="Кнопка открытия меню"></button>
         <!--  main-nav__nav-list--closed - меню закрыто  main-nav__nav-list - меню открыто (состояние по умолчанию)-->
-        <ul class="main-nav__nav-list site-list">
+        <ul class="main-nav__nav-list--closed site-list">
           <li class="site-list__item"><a href="#about-us">О нас</a></li>
           <li class="site-list__item"><a href="#bike-types">Виды велосипедов</a></li>
           <li class="site-list__item"><a href="#bike-video">Видео про велосипеды</a></li>
@@ -47,7 +47,7 @@
           </div>
           <div class="intro__form">
             <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <form class="form" action="/" method="post">
+            <form class="intro__application form" action="/" method="post">
               <div class="form__field">
                 <label class="visually-hidden" for="user-name">Ваше имя:</label>
                 <input type="text" name="email" id="user-name" placeholder="Введите Ваше Имя" required>

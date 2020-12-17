@@ -16,6 +16,19 @@
       @include text-sets(15px,24px,normal);
       color: rgba(#1c1c1c, 0.6);
     }
+
+    @media (max-width: $width-desktop) {
+      padding-left: 19px;
+      padding-bottom: 14px;
+    }
+
+    @media (max-width: $width-laptop) {
+      padding-left: 22px;
+    }
+  }
+
+  @media (max-width: $width-laptop) {
+    margin-bottom: 22px;
   }
 }
 
@@ -25,4 +38,8 @@
   padding-top: 14px;
   padding-bottom: 10px;
   width: 100%;
+
+  @media (max-width: $width-laptop) {
+    padding-bottom: 15px;
+  }
 }

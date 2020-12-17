@@ -14,6 +14,10 @@
     @media (max-width: $width-desktop) {
       @include text-correct(30px,42px);
     }
+
+    @media (max-width: $width-laptop) {
+      margin-bottom: 6%;
+    }
   }
 
   p {
@@ -28,7 +32,7 @@
   }
 
   @media (max-width: $width-desktop) {
-    margin-bottom: 10%;
+    margin-bottom: 17%;
 
     h1 {
       text-align: center;
@@ -38,6 +42,10 @@
       text-align: center;
       margin: 0 auto;
     }
+  }
+
+  @media (max-width: $width-laptop) {
+    margin-bottom: 49%;
   }
 }
 
@@ -55,8 +63,12 @@
     align-items: center;
     justify-content: center;
     width: auto;
-    padding-top: 5.3%;
-    padding-bottom: 11%;
+    padding-top: 7.3%;
+    padding-bottom: 9.8%;
+  }
+
+  @media (max-width: $width-laptop) {
+    padding: 14.3% 16px 22%;
   }
 }
 
@@ -88,10 +100,31 @@
     @media (max-width: $width-desktop) {
       color: #000000;
       font-size: 18px;
+      margin: 11px 47px 34px 29px;
+    }
+
+    @media (max-width: $width-laptop) {
+      margin: 0 0 7%;
     }
   }
 
   @media (max-width: $width-desktop) {
-    width: 36%;
+    width: 56%;
+  }
+
+  @media (max-width: $width-laptop) {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.intro__application {
+  @media (max-width: $width-desktop) {
+    margin-left: 36px;
+    margin-right: 53px;
+  }
+
+  @media (max-width: $width-laptop) {
+    margin: 0 7px;
   }
 }

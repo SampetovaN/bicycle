@@ -2,12 +2,16 @@
   background-color: #f6f7f9;
 
   h2 {
-    @include text-sets(30px,30px,600);
+    @include text-sets(30px, 30px, 600);
     color: #1f1f1f;
     text-align: center;
 
     @media (max-width: $width-desktop) {
-      @include text-correct(24px,41px);
+      @include text-correct(24px, 41px);
+    }
+
+    @media (max-width: $width-laptop) {
+      margin-bottom: 9%;
     }
   }
 }
@@ -16,11 +20,15 @@
   margin: 0 auto;
   width: 84%;
   max-width: 1700px;
-  padding: 0 20px;
+  padding: 9% 20px 0;
 
   @media (max-width: $width-desktop) {
     width: auto;
-    padding: 0 1%;
+    padding: 4% 1% 0;
+  }
+
+  @media (max-width: $width-laptop) {
+    padding: 9% 1% 5%;
   }
 }
 
@@ -35,7 +43,13 @@
 
   @media (max-width: $width-desktop) {
     justify-content: center;
-    padding-bottom: 0;
+    padding: 0 0 3.4% 38px;
+  }
+
+  @media (max-width: $width-laptop) {
+    padding: 0;
+    justify-content: space-around;
+    margin: 0 auto;
   }
 }
 
@@ -44,21 +58,38 @@
   margin-bottom: 0;
   margin-top: 0;
 
+  @media (max-width: $width-desktop) {
+    margin-left: 6px;
+  }
+
+  @media (max-width: $width-laptop) {
+    margin: 0;
+  }
+
   &:nth-of-type(3n) {
     margin-right: 0;
   }
 
   figcaption {
-    @include text-sets(22px,34px,600);
+    @include text-sets(22px, 34px, 600);
     color: #000000;
     text-align: center;
     margin-top: 15px;
+
+    @media (max-width: $width-desktop) {
+      margin-top: 12px;
+    }
+  }
+
+  img {
+    width: 100%;
   }
 }
 
 .types__item {
   margin-top: 34px;
   position: relative;
+  z-index: 5;
 
   &:nth-child(3n+1) {
     &::before {
@@ -72,10 +103,30 @@
       bottom: 0;
       z-index: -1;
     }
+
+    @media (max-width: $width-desktop) {
+      margin-top: 1%;
+
+      &::before {
+        transform: scale(0.7);
+        left: -20%;
+        right: 0;
+        top: 50%;
+        width: 57%;
+      }
+    }
+
+    @media (max-width: $width-laptop) {
+      margin-top: 1%;
+
+      &::before {
+        width: 64%;
+      }
+    }
   }
 
   &:nth-child(2n) {
-    margin-top: 5%;
+    margin-top: 5.3%;
 
     &::before,
     &::after {
@@ -83,27 +134,24 @@
       position: absolute;
       background-image: url("../img/rectangle.svg");
       background-repeat: no-repeat;
-
+      right: 0;
+      bottom: 0;
       z-index: 2;
     }
 
     &::before {
-      right: 0;
-      bottom: 0;
       left: -5%;
       top: -2%;
     }
 
     &::after {
-      right: 0;
-      bottom: 0;
       left: 83%;
       top: 88%;
     }
 
     @media (max-width: $width-desktop) {
       position: static;
-      margin-top: 0;
+      margin-top: 1%;
 
       &::before,
       &::after {
@@ -130,11 +178,32 @@
     }
 
     @media (max-width: $width-desktop) {
-      margin-top: 0;
+      margin-top: 1%;
+
+      &::before {
+        transform: scale(0.39);
+        left: 55%;
+        top: -53%;
+        width: 58%;
+      }
+    }
+
+    @media (max-width: $width-laptop) {
+      margin-top: 1%;
+
+      &::before {
+        left: 58%;
+        top: -52%;
+        width: 71%;
+      }
     }
   }
 
   @media (max-width: $width-desktop) {
-    margin: 0 0 7%;
+    margin: 1% 0 6%;
+  }
+
+  @media (max-width: $width-laptop) {
+    margin: 0 0 12%;
   }
 }

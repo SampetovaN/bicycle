@@ -46,9 +46,14 @@
   @media (max-width: $width-desktop) {
     margin-right: auto;
     display: block;
-    margin-top: 25px;
+    margin-top: 22px;
     margin-left: 21px;
     padding: 0;
+  }
+
+  @media (max-width: $width-laptop) {
+    margin-top: 21px;
+    margin-left: 19px;
   }
 }
 

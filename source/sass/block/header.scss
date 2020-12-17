@@ -24,6 +24,13 @@
       height: 44vw;
       max-height: 345px;
     }
+
+    @media (max-width: $width-laptop) {
+      background-image: url("../img/bg-bike-mobile.png");
+      left: 0;
+      height: 100vw;
+      min-height: 390px;
+    }
   }
 }
 
@@ -42,6 +49,15 @@
     }
   }
 }
+
+@media (max-width: $width-laptop) and (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+  .header {
+    &::after {
+      background-image: url("../img/bg-bike-mobile@2x.png");
+    }
+  }
+}
+
 
 .header__wrapper {
   @media (max-width: $width-desktop) {
