@@ -2,8 +2,16 @@
   @include list-refresh;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 21px 16px 9px;
-
   margin: 0 auto;
+
+
+  @media (max-width:$width-desktop) {
+    border-bottom: none;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #fff;
+    padding: 8% 0 6%;
+  }
 }
 
 .site-list__item {
@@ -24,11 +32,45 @@
 
   @media (max-width: $width-desktop) {
     @include text-sets(20px, 28px, 400);
-
+    position: relative;
+    z-index: 5;
+    margin-bottom: 30px;
     a {
+      display: flex;
       color: #48494d;
-
+      background-color: #e5e5e5;
       @include set-hover(#48494d);
+      padding: 17px 0 17px 16px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/arrow-right.svg");
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      bottom: 0;
+      left: 96%;
+      right: 0;
+      z-index: 1;
+      top: 43%;
+    }
+    &:hover,
+    &:focus {
+      &::after {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      &::after {
+        opacity: 0.3;
+      }
+    }
+  }
+  @media (max-width: $width-laptop) {
+    &:after {
+      left: 92%;
     }
   }
 }

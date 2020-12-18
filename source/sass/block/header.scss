@@ -32,7 +32,45 @@
       min-height: 390px;
     }
   }
+
+
+  &--nojs {
+    @media (max-width: $width-desktop) {
+      .main-nav__toggle,
+      .main-nav__toggle-list {
+        display: none;
+        margin: 0;
+        width: 0;
+        height: 0;
+      }
+
+
+      .main-nav__nav-list {
+        display: block;
+        position: static;
+      }
+
+      .main-nav__toggle {
+        display: none;
+      }
+
+      &::after {
+        max-height: none;
+        height: 90vw;
+        min-height: 852px;
+      }
+    }
+    @media (max-width: $width-laptop) {
+      .main-nav__nav-list {
+        height: 96%;
+        margin: 0;
+        padding: 16% 0 4%;
+      }
+    }
+
+  }
 }
+
 
 @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
   .header {

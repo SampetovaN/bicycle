@@ -17,21 +17,22 @@
 </div>
 <div class="content">
   <div class="content__main">
-    <header class="header">
+    <header class="header header--nojs  ">
       <div class="header__wrapper">
       <nav class="main-nav">
         <a class="main-nav__logo">
             <img src="img/logo.svg" width="67" height="20" alt="Логотип Moon">
         </a>
-        <!-- main-nav__toggle--closed - меню закрыто/иконка гамбургера  main-nav__toggle--opened - меню открыто/иконка крестика-->
-        <button class="main-nav__toggle main-nav__toggle--closed" type="button" aria-label="Кнопка открытия меню"></button>
-        <!--  main-nav__nav-list--closed - меню закрыто  main-nav__nav-list - меню открыто (состояние по умолчанию)-->
-        <ul class="main-nav__nav-list--closed site-list">
-          <li class="site-list__item"><a href="#about-us">О нас</a></li>
-          <li class="site-list__item"><a href="#bike-types">Виды велосипедов</a></li>
-          <li class="site-list__item"><a href="#bike-video">Видео про велосипеды</a></li>
-          <li class="site-list__item"><a href="#contact-us">Контакты</a></li>
-        </ul>
+        <button class="main-nav__toggle" type="button" aria-label="Кнопка открытия меню"></button>
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle-list" type="button" aria-label="Кнопка закрытия меню"></button>
+          <ul class="main-nav__nav-list site-list">
+            <li class="site-list__item"><a href="#about-us">О нас</a></li>
+            <li class="site-list__item"><a href="#bike-types">Виды велосипедов</a></li>
+            <li class="site-list__item"><a href="#bike-video">Видео про велосипеды</a></li>
+            <li class="site-list__item"><a href="#contact-us">Контакты</a></li>
+          </ul>
+        </div>
       </nav>
         </div>
     </header>
