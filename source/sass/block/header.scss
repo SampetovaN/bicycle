@@ -45,7 +45,7 @@
       }
 
 
-      .main-nav__nav-list {
+      .main-nav__wrapper {
         display: block;
         position: static;
       }
@@ -60,14 +60,13 @@
         min-height: 852px;
       }
     }
-    @media (max-width: $width-laptop) {
+
+    @media (max-width: $width-desktop) {
       .main-nav__nav-list {
-        height: 96%;
         margin: 0;
-        padding: 16% 0 4%;
+        padding: 8% 0 4%;
       }
     }
-
   }
 }
 

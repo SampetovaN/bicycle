@@ -5,12 +5,11 @@
   margin: 0 auto;
 
 
-  @media (max-width:$width-desktop) {
+  @media (max-width: $width-desktop) {
     border-bottom: none;
     box-sizing: border-box;
     margin: 0;
-    background-color: #fff;
-    padding: 8% 0 6%;
+    padding: 14.3% 0 32%;
   }
 }
 
@@ -35,13 +34,16 @@
     position: relative;
     z-index: 5;
     margin-bottom: 30px;
+
     a {
       display: flex;
       color: #48494d;
       background-color: #e5e5e5;
+
       @include set-hover(#48494d);
       padding: 17px 0 17px 16px;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -50,11 +52,12 @@
       width: 25px;
       height: 25px;
       bottom: 0;
-      left: 96%;
+      left: 90%;
       right: 0;
       z-index: 1;
-      top: 43%;
+      top: 34%;
     }
+
     &:hover,
     &:focus {
       &::after {
@@ -68,9 +71,9 @@
       }
     }
   }
-  @media (max-width: $width-laptop) {
+  /*  @media (max-width: $width-laptop) {
     &:after {
-      left: 92%;
+      left: 90%;
     }
-  }
+  }*/
 }
