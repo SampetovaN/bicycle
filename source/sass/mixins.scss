@@ -44,3 +44,14 @@
   font-size: $size;
   line-height: $height;
 }
+
+@mixin set-opacity-button {
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

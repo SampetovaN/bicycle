@@ -92,21 +92,15 @@
   bottom: 0;
   z-index: 5;
   margin: auto;
-  height: 65px;
+  height: 68px;
   width: 75px;
+  display: block;
 
-  &:hover,
-  &:focus {
-    opacity: 0.7;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+ @include set-opacity-button;
 
   @media (min-width: $width-laptop + 1) and (max-width: $width-desktop) {
     width: 109px;
-    height: 90px;
+    height: 93px;
     margin: 19% 38%;
 
     svg {

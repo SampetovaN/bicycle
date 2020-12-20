@@ -25,10 +25,10 @@
     var onClickButtonOpenMenu = function () {
       menu.classList.remove(CLOSED_MENU);
       menu.classList.add(OPENED_MENU);
-      buttonOpenMenu.removeEventListener('click', onClickButtonOpenMenu);
       buttonCloseMenu.addEventListener('click', onClickButtonCloseMenu);
       document.addEventListener('keydown', onEscKeyDown);
     };
+
     buttonOpenMenu.addEventListener('click', onClickButtonOpenMenu);
     document.addEventListener('keydown', onEscKeyDown);
   }

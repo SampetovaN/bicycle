@@ -71,21 +71,15 @@
 
 .contacts__link {
   color: rgba(#000000, 0.5);
-
+  svg {
+    @include set-opacity-button;
+  }
   &:hover,
   &:focus {
     color: rgba(#000000, 0.7);
-
-    svg {
-      opacity: 0.7;
-    }
   }
 
   &:active {
     color: #000000;
-
-    svg {
-      opacity: 0.3;
-    }
   }
 }

@@ -4,12 +4,15 @@
   padding: 21px 16px 9px;
   margin: 0 auto;
 
-
   @media (max-width: $width-desktop) {
     border-bottom: none;
     box-sizing: border-box;
     margin: 0;
-    padding: 14.3% 0 32%;
+    padding: 14.3% 0 23%;
+  }
+
+  @media (max-width: $width-laptop) {
+    padding-bottom: 32%;
   }
 }
 

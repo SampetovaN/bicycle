@@ -164,9 +164,9 @@ select {
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type='button']::-moz-focus-inner,
-[type='reset']::-moz-focus-inner,
-[type='submit']::-moz-focus-inner {
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0; }
 
@@ -174,9 +174,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type='button']:-moz-focusring,
-[type='reset']:-moz-focusring,
-[type='submit']:-moz-focusring {
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
 /**
@@ -222,8 +222,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type='checkbox'],
-[type='radio'] {
+[type="checkbox"],
+[type="radio"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* 1 */
@@ -233,15 +233,15 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type='number']::-webkit-inner-spin-button,
-[type='number']::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type='search'] {
+[type="search"] {
   outline-offset: -2px;
   /* 2 */ }
 
@@ -282,28 +282,28 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/open-sans-300.woff2"), url("../fonts/open-sans-300.woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/open-sans-regular.woff2"), url("../fonts/open-sans-regular.woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/open-sans-600.woff2"), url("../fonts/open-sans-600.woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../fonts/open-sans-700.woff2"), url("../fonts/open-sans-700.woff");
   font-weight: bold;
   font-style: normal;
@@ -320,7 +320,7 @@ body {
   padding: 0;
   margin: 0;
   min-width: 320px;
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff; }
@@ -333,8 +333,8 @@ img {
   height: auto; }
 
 .visually-hidden:not(:focus):not(:active),
-input[type='checkbox'],
-input[type='radio'],
+input[type="checkbox"],
+input[type="radio"],
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -389,7 +389,7 @@ input[type='radio'],
   position: relative;
   margin: 0 auto; }
   .header::after {
-    content: '';
+    content: "";
     position: absolute;
     background-image: url("../img/bg-bike-desktop.png");
     background-repeat: no-repeat;
@@ -561,7 +561,10 @@ input[type='radio'],
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       margin: 0;
-      padding: 14.3% 0 32%; } }
+      padding: 14.3% 0 23%; } }
+  @media (max-width: 767px) {
+    .site-list {
+      padding-bottom: 32%; } }
 
 .site-list__item {
   font-size: 16px;
@@ -598,7 +601,7 @@ input[type='radio'],
         .site-list__item a:active {
           color: rgba(72, 73, 77, 0.3); }
       .site-list__item::after {
-        content: '';
+        content: "";
         position: absolute;
         background-image: url("../img/arrow-right.svg");
         background-repeat: no-repeat;
@@ -978,7 +981,7 @@ input[type='radio'],
   position: relative;
   z-index: 5; }
   .types__item:nth-child(3n+1)::before {
-    content: '';
+    content: "";
     position: absolute;
     background-image: url("../img/ellipse.svg");
     background-repeat: no-repeat;
@@ -1005,7 +1008,7 @@ input[type='radio'],
   .types__item:nth-child(2n) {
     margin-top: 5.3%; }
     .types__item:nth-child(2n)::before, .types__item:nth-child(2n)::after {
-      content: '';
+      content: "";
       position: absolute;
       background-image: url("../img/rectangle.svg");
       background-repeat: no-repeat;
@@ -1028,7 +1031,7 @@ input[type='radio'],
   .types__item:nth-child(3n) {
     margin-top: 2%; }
     .types__item:nth-child(3n)::before {
-      content: '';
+      content: "";
       position: absolute;
       background-image: url("../img/ellipse.svg");
       background-repeat: no-repeat;
@@ -1151,8 +1154,9 @@ input[type='radio'],
   bottom: 0;
   z-index: 5;
   margin: auto;
-  height: 65px;
-  width: 75px; }
+  height: 68px;
+  width: 75px;
+  display: block; }
   .video__button:hover, .video__button:focus {
     opacity: 0.7; }
   .video__button:active {
@@ -1160,7 +1164,7 @@ input[type='radio'],
   @media (min-width: 768px) and (max-width: 1023px) {
     .video__button {
       width: 109px;
-      height: 90px;
+      height: 93px;
       margin: 19% 38%; }
       .video__button svg {
         width: 107px;
@@ -1324,14 +1328,14 @@ input[type='radio'],
 
 .contacts__link {
   color: rgba(0, 0, 0, 0.5); }
+  .contacts__link svg:hover, .contacts__link svg:focus {
+    opacity: 0.7; }
+  .contacts__link svg:active {
+    opacity: 0.3; }
   .contacts__link:hover, .contacts__link:focus {
     color: rgba(0, 0, 0, 0.7); }
-    .contacts__link:hover svg, .contacts__link:focus svg {
-      opacity: 0.7; }
   .contacts__link:active {
     color: #000000; }
-    .contacts__link:active svg {
-      opacity: 0.3; }
 
 .footer {
   -webkit-box-flex: 0;
