@@ -24,7 +24,7 @@
 
   @media (max-width: $width-desktop) {
     width: auto;
-    padding: 4% 1% 0;
+    padding: 4% 6% 0;
   }
 
   @media (max-width: $width-laptop) {
@@ -36,19 +36,17 @@
   @include list-refresh;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 0 12.3% 43px;
   margin-bottom: 0;
 
   @media (max-width: $width-desktop) {
-    justify-content: center;
     padding: 0 0 3.4% 38px;
   }
 
   @media (max-width: $width-laptop) {
     padding: 0;
-    justify-content: space-around;
     margin: 0 auto;
   }
 }
@@ -200,7 +198,7 @@
   }
 
   @media (max-width: $width-desktop) {
-    margin: 1% 0 6%;
+    margin: 1% 0 7%;
   }
 
   @media (max-width: $width-laptop) {

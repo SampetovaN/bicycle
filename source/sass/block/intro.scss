@@ -1,6 +1,5 @@
 .intro {
   padding: 0;
-  //background-color: #1c1c1c;
 }
 
 .intro__content {
@@ -47,6 +46,7 @@
 
   @media (max-width: $width-laptop) {
     margin-bottom: 49%;
+    width: 100%;
   }
 }
 
@@ -114,7 +114,7 @@
   }
 
   @media (max-width: $width-laptop) {
-    width: auto;
+    width: 100%;
     padding: 0;
   }
 }

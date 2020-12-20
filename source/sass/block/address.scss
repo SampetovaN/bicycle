@@ -16,7 +16,7 @@
     @media (max-width: $width-desktop) {
       font-size: 24px;
       margin-right: 0;
-      margin-bottom: 0.2%;
+      margin-bottom: 1.2%;
     }
 
     @media (max-width: $width-laptop) {
@@ -39,14 +39,16 @@
     }
 
     @media (max-width: $width-laptop) {
-      width: auto;
-      margin: 6% 9% 7% 7%;
+      width: 100%;
+      margin: 6% 0 7%;
+      padding: 0 9%;
+      box-sizing: border-box;
     }
   }
 
   @media (max-width: $width-desktop) {
     width: auto;
-    padding: 0 5%;
+    padding: 0 4.8%;
   }
 
   @media (max-width: $width-laptop) {
