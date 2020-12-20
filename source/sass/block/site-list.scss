@@ -64,7 +64,7 @@
     &:hover,
     &:focus {
       &::after {
-        opacity: 0.6;
+        opacity: 0.7;
       }
     }
 
@@ -74,9 +74,4 @@
       }
     }
   }
-  /*  @media (max-width: $width-laptop) {
-    &:after {
-      left: 90%;
-    }
-  }*/
 }

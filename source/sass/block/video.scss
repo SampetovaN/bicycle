@@ -96,7 +96,7 @@
   width: 75px;
   display: block;
 
- @include set-opacity-button;
+  @include set-opacity-button;
 
   @media (min-width: $width-laptop + 1) and (max-width: $width-desktop) {
     width: 109px;

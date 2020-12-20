@@ -569,12 +569,7 @@ input[type="radio"],
 .site-list__item {
   font-size: 16px;
   line-height: 32px;
-  font-weight: 300;
-  /*  @media (max-width: $width-laptop) {
-    &:after {
-      left: 90%;
-    }
-  }*/ }
+  font-weight: 300; }
   .site-list__item a {
     color: rgba(255, 255, 255, 0.7); }
     .site-list__item a:hover, .site-list__item a:focus {
@@ -613,7 +608,7 @@ input[type="radio"],
         z-index: 1;
         top: 34%; }
       .site-list__item:hover::after, .site-list__item:focus::after {
-        opacity: 0.6; }
+        opacity: 0.7; }
       .site-list__item:active::after {
         opacity: 0.3; } }
 
