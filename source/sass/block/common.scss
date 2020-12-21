@@ -1,0 +1,22 @@
+.common {
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-around;
+    padding: 11.3% 19.4% 15.3%;
+    position: relative;
+    background-image: url("../img/bg-bike-desktop.png");
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    margin-bottom: 10.7%;
+  }
+}
+
+@media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+  .common {
+    @media (min-width: $width-desktop) {
+      background-image: url("../img/bg-bike-desktop@2x.png");
+    }
+  }
+}

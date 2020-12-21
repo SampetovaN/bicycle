@@ -1,3 +1,4 @@
+'use strict';
 
 (function () {
   var inputPhone = document.querySelector('#user-phone');

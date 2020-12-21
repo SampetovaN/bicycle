@@ -16,6 +16,7 @@ var csso = require('gulp-csso');
 var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var wrapper = require('gulp-wrapper');
+var replace = require('gulp-replace');
 
 gulp.task('clean', function () {
   return del('build');
@@ -39,6 +40,7 @@ gulp.task('vendor', function () {
 
 gulp.task('script', function () {
   return gulp.src(['source/js/*.js','!source/js/vendor.js'])
+    .pipe(replace(/['"]use strict['"];/g, ''))
     .pipe(concat('main.js'))
     .pipe(wrapper({ header: '\'use strict\';\n' }))
     .pipe(gulp.dest('build/js'))

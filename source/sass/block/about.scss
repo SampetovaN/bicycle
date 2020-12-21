@@ -12,7 +12,7 @@
 
     @media (max-width: $width-desktop) {
       @include text-correct(24px, 41px);
-      margin-bottom: 4.8%;
+      margin-bottom: 5.2%;
     }
 
     @media (max-width: $width-laptop) {
@@ -21,7 +21,7 @@
   }
 
   @media (max-width: $width-desktop) {
-    padding: 0 14%;
+    padding: 0 11% 0 12%;
     width: auto;
   }
 
@@ -35,8 +35,8 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 10%;
+  justify-content: space-around;
+  margin-bottom: 10.2%;
 
   @media (max-width: $width-desktop) {
     margin: 0 0 5%;
@@ -53,6 +53,7 @@
   flex-direction: column;
   align-items: center;
   padding: 0 1%;
+  min-width: 270px;
 
   &:last-child {
     margin-right: 0;
@@ -71,7 +72,7 @@
     width: 100%;
 
     @media (max-width: $width-desktop) {
-      margin-bottom: 42px;
+      margin-bottom: 39px;
     }
 
     @media (max-width: $width-laptop) {

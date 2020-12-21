@@ -8,18 +8,20 @@
     border-bottom: none;
     box-sizing: border-box;
     margin: 0;
-    padding: 14.3% 0 23%;
+    padding: 14% 0;
   }
 
   @media (max-width: $width-laptop) {
-    padding-bottom: 32%;
+    padding: 14.3% 0 43%;
   }
 }
 
 .site-list__item {
   @include text-sets(16px, 32px, 300);
+  flex-shrink: 0;
 
   a {
+    padding-right: 6px;
     color: rgba(#ffffff, 0.7);
 
     &:hover,
@@ -36,7 +38,6 @@
     @include text-sets(20px, 28px, 400);
     position: relative;
     z-index: 5;
-    margin-bottom: 30px;
 
     a {
       display: flex;
@@ -44,7 +45,8 @@
       background-color: #e5e5e5;
 
       @include set-hover(#48494d);
-      padding: 17px 0 17px 16px;
+      padding: 17px 11% 17px 16px;
+      box-sizing: border-box;
     }
 
     &::after {
@@ -58,7 +60,7 @@
       left: 90%;
       right: 0;
       z-index: 1;
-      top: 34%;
+      top: 31%;
     }
 
     &:hover,

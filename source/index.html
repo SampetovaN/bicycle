@@ -15,180 +15,177 @@
 <div style='display: none'>
   <include src='build/img/sprite.svg'></include>
 </div>
-<div class='content'>
-  <div class='content__main'>
-    <header class='header header--nojs'>
-      <div class='header__wrapper'>
-      <nav class='main-nav'>
-        <a class='main-nav__logo' aria-label='Логотип Moon'>
-          <svg width='67' height='20'>
-            <use xlink:href='#sprite-logo'></use>
-          </svg>
-        </a>
-        <button class='main-nav__toggle' type='button' aria-label='Кнопка открытия меню'>
-          <svg width='30' height='30'>
-            <use xlink:href='#sprite-menu'></use>
+  <header class='header header--nojs'>
+    <div class='header__wrapper'>
+    <nav class='main-nav'>
+      <a class='main-nav__logo' aria-label='Логотип Moon'>
+        <svg width='67' height='20'>
+          <use xlink:href='#sprite-logo'></use>
+        </svg>
+      </a>
+      <button class='main-nav__toggle' type='button' aria-label='Кнопка открытия меню'>
+        <svg width='30' height='30'>
+          <use xlink:href='#sprite-menu'></use>
+        </svg>
+      </button>
+      <div class='main-nav__wrapper main-nav__wrapper--closed'>
+        <button class='main-nav__toggle-list' type='button' aria-label='Кнопка закрытия меню'>
+          <svg width='24' height='25'>
+            <use xlink:href='#sprite-close'></use>
           </svg>
         </button>
-        <div class='main-nav__wrapper main-nav__wrapper--closed'>
-          <button class='main-nav__toggle-list' type='button' aria-label='Кнопка закрытия меню'>
-            <svg width='24' height='25'>
-              <use xlink:href='#sprite-close'></use>
+        <ul class='main-nav__nav-list site-list'>
+          <li class='site-list__item'><a href='#about-us'>О нас</a></li>
+          <li class='site-list__item'><a href='#bike-types'>Виды велосипедов</a></li>
+          <li class='site-list__item'><a href='#bike-video'>Видео про велосипеды</a></li>
+          <li class='site-list__item'><a href='#contact-us'>Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+      </div>
+  </header>
+  <main class='main'>
+    <div class='common'>
+    <section class='intro'>
+      <div  class='intro__wrapper'>
+        <div class='intro__content'>
+          <a class='intro__logo'>
+            <svg width='67' height='20' aria-label='Логотип Moon'>
+              <use xlink:href='#sprite-logo'></use>
+            </svg>
+          </a>
+          <h1>Мы продаем велосипеды</h1>
+          <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </div>
+      </div>
+    </section>
+      <section class='form'>
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <form class='form__application' action='#'>
+          <div class='form__field'>
+            <label class='visually-hidden' for='user-name'>Ваше имя:</label>
+            <input type='text' name='email' id='user-name' placeholder='Введите Ваше Имя' required>
+          </div>
+          <div class='form__field'>
+            <label class='visually-hidden' for='user-phone'>Ваш номер телефона:</label>
+            <input type='tel' name='phone' id='user-phone' required pattern='(\+7|8)\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}' placeholder='Введите Ваш номер телефона'>
+          </div>
+          <button class='button form__button' type='submit'>Подобрать велосипед мечты</button>
+        </form>
+      </section>
+    </div>
+    <section class='about' id='about-us'>
+        <h2>Несколько фактов о нас</h2>
+        <ul class='about__facts'>
+          <li class='about__fact'>
+            <span>01</span>
+            <p>Самый широкий выбор велосипедов!</p>
+          </li>
+          <li class='about__fact'>
+            <span>02</span>
+            <p>Доставка велосипедов по всей России!</p>
+          </li>
+          <li class='about__fact'>
+            <span>03</span>
+            <p>Большой выбор крутых аксессуаров!</p>
+          </li>
+          <li class='about__fact'>
+            <span>04</span>
+            <p>Профессиональные консультации!</p>
+          </li>
+        </ul>
+    </section>
+    <section class='types' id='bike-types'>
+      <div class='types__wrapper'>
+        <h2>Виды велосипедов</h2>
+        <ul class='types__list'>
+          <li class='types__item'>
+            <figure class='types__figure'>
+              <picture>
+                <source type='image/webp' media='(max-width: 1023px)' srcset='img/bike-street-nodesktop.webp 1x, img/bike-street-nodesktop@2x.webp 2x'>
+                <source type='image/webp' media='(min-width: 1024px)' srcset='img/bike-street-desktop.webp 1x, img/bike-street-desktop@2x.webp 2x'>
+                <!-- 1х: 270px; 2x:540px -->
+                <source media='(max-width: 1023px)' srcset='img/bike-street-nodesktop.jpg 1x, img/bike-street-nodesktop@2x.jpg 2x'>
+                <!-- 1х: 342px; 2x:684px -->
+                <img src='img/bike-street-desktop.jpg' srcset='img/bike-street-desktop.jpg 1x, img/bike-street-desktop@2x.jpg 2x' width='342' height='503' alt='Дорожный велосипед'>
+              </picture>
+              <figcaption>Дорожный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class='types__item'>
+            <figure class='types__figure'>
+              <picture>
+                <source type='image/webp' media='(max-width: 1023px)' srcset='img/bike-mount-nodesktop.webp 1x, img/bike-mount-nodesktop@2x.webp 2x'>
+                <source type='image/webp' media='(min-width: 1024px)' srcset='img/bike-mount-desktop.webp 1x, img/bike-mount-desktop@2x.webp 2x'>
+                <!-- 1х: 270px; 2x:540px -->
+                <source media='(max-width: 1023px)' srcset='img/bike-mount-nodesktop.jpg 1x, img/bike-mount-nodesktop@2x.jpg 2x'>
+                <!-- 1х: 342px; 2x:684px -->
+                <img src='img/bike-mount-desktop.jpg' srcset='img/bike-mount-desktop.jpg 1x, img/bike-mount-desktop@2x.jpg 2x' width='342' height='566' alt='Горный велосипед'>
+              </picture>
+              <figcaption>Горный велосипед</figcaption>
+            </figure>
+          </li>
+          <li class='types__item'>
+            <figure class='types__figure'>
+              <picture>
+                <source type='image/webp' media='(max-width: 1023px)' srcset='img/bike-child-nodesktop.webp 1x, img/bike-child-nodesktop@2x.webp 2x'>
+                <source type='image/webp' media='(min-width: 1024px)' srcset='img/bike-child-desktop.webp 1x, img/bike-child-desktop@2x.webp 2x'>
+                <!-- 1х: 270px; 2x:540px -->
+                <source media='(max-width: 1023px)' srcset='img/bike-child-nodesktop.jpg 1x, img/bike-child-nodesktop@2x.jpg 2x'>
+                <!-- 1х: 342px; 2x:684px -->
+                <img src='img/bike-child-desktop.jpg' srcset='img/bike-child-desktop.jpg 1x, img/bike-child-desktop@2x.jpg 2x' width='342' height='513' alt='Дорожный велосипед'>
+              </picture>
+              <figcaption>Детский велосипед</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class='video' id='bike-video'>
+      <div class='video__wrapper'>
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class='video__content'>
+          <picture>
+            <source type='image/webp' media='(max-width: 767px)' srcset='img/preview-bike-mobile.webp 1x, img/preview-bike-mobile@2x.webp 2x'>
+            <source type='image/webp' media='(max-width: 1023px)' srcset='img/preview-bike-laptop.webp 1x, img/preview-bike-laptop@2x.webp 2x'>
+            <source type='image/webp' media='(min-width: 1024px)' srcset='img/preview-bike-desktop.webp 1x, img/preview-bike-desktop@2x.webp 2x'>
+            <!-- 1х: 288px; 2x:576px -->
+            <source media='(max-width: 767px)' srcset='img/preview-bike-mobile.png 1x, img/preview-bike-mobile@2x.png 2x'>
+            <source media='(max-width: 1023px)' srcset='img/preview-bike-laptop.png 1x, img/preview-bike-laptop@2x.png 2x'>
+            <!-- 1х: 503px; 2x: 1006px -->
+            <img src='img/preview-bike-desktop.png' srcset='img/preview-bike-desktop.png 1x, img/preview-bike-desktop@2x.png 2x' width='929' height='522' alt='Превью для видео про велосипеды'>
+          </picture>
+          <button class='video__button' type='button' aria-label='Кнопка запуска видео'>
+            <svg width='65' height='65'>
+              <use xlink:href='#sprite-play'></use>
             </svg>
           </button>
-          <ul class='main-nav__nav-list site-list'>
-            <li class='site-list__item'><a href='#about-us'>О нас</a></li>
-            <li class='site-list__item'><a href='#bike-types'>Виды велосипедов</a></li>
-            <li class='site-list__item'><a href='#bike-video'>Видео про велосипеды</a></li>
-            <li class='site-list__item'><a href='#contact-us'>Контакты</a></li>
-          </ul>
         </div>
-      </nav>
-        </div>
-    </header>
-    <main class='main'>
-      <section class='intro'>
-        <div  class='intro__wrapper'>
-          <div class='intro__content'>
-            <a class='intro__logo'>
-              <svg width='67' height='20' aria-label='Логотип Moon'>
-                <use xlink:href='#sprite-logo'></use>
-              </svg>
-            </a>
-            <h1>Мы продаем велосипеды</h1>
-            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-          </div>
-          <div class='intro__form'>
-            <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-            <form class='intro__application form' action='#'>
-              <div class='form__field'>
-                <label class='visually-hidden' for='user-name'>Ваше имя:</label>
-                <input type='text' name='email' id='user-name' placeholder='Введите Ваше Имя' required>
-              </div>
-              <div class='form__field'>
-                <label class='visually-hidden' for='user-phone'>Ваш номер телефона:</label>
-                <input type='tel' name='phone' id='user-phone' required pattern='(\+7|8)\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}' placeholder='Введите Ваш номер телефона'>
-              </div>
-              <button class='button form__button' type='submit'>Подобрать велосипед мечты</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class='about' id='about-us'>
-          <h2>Несколько фактов о нас</h2>
-          <ul class='about__facts'>
-            <li class='about__fact'>
-              <span>01</span>
-              <p>Самый широкий выбор велосипедов!</p>
-            </li>
-            <li class='about__fact'>
-              <span>02</span>
-              <p>Доставка велосипедов по всей России!</p>
-            </li>
-            <li class='about__fact'>
-              <span>03</span>
-              <p>Большой выбор крутых аксессуаров!</p>
-            </li>
-            <li class='about__fact'>
-              <span>04</span>
-              <p>Профессиональные консультации!</p>
-            </li>
-          </ul>
-      </section>
-      <section class='types' id='bike-types'>
-        <div class='types__wrapper'>
-          <h2>Виды велосипедов</h2>
-          <ul class='types__list'>
-            <li class='types__item'>
-              <figure class='types__figure'>
-                <picture>
-                  <source type='image/webp' media='(max-width: 1023px)' srcset='img/bike-street-nodesktop.webp 1x, img/bike-street-nodesktop@2x.webp 2x'>
-                  <source type='image/webp' media='(min-width: 1024px)' srcset='img/bike-street-desktop.webp 1x, img/bike-street-desktop@2x.webp 2x'>
-                  <!-- 1х: 270px; 2x:540px -->
-                  <source media='(max-width: 1023px)' srcset='img/bike-street-nodesktop.jpg 1x, img/bike-street-nodesktop@2x.jpg 2x'>
-                  <!-- 1х: 342px; 2x:684px -->
-                  <img src='img/bike-street-desktop.jpg' srcset='img/bike-street-desktop.jpg 1x, img/bike-street-desktop@2x.jpg 2x' width='342' height='503' alt='Дорожный велосипед'>
-                </picture>
-                <figcaption>Дорожный велосипед</figcaption>
-              </figure>
-            </li>
-            <li class='types__item'>
-              <figure class='types__figure'>
-                <picture>
-                  <source type='image/webp' media='(max-width: 1023px)' srcset='img/bike-mount-nodesktop.webp 1x, img/bike-mount-nodesktop@2x.webp 2x'>
-                  <source type='image/webp' media='(min-width: 1024px)' srcset='img/bike-mount-desktop.webp 1x, img/bike-mount-desktop@2x.webp 2x'>
-                  <!-- 1х: 270px; 2x:540px -->
-                  <source media='(max-width: 1023px)' srcset='img/bike-mount-nodesktop.jpg 1x, img/bike-mount-nodesktop@2x.jpg 2x'>
-                  <!-- 1х: 342px; 2x:684px -->
-                  <img src='img/bike-mount-desktop.jpg' srcset='img/bike-mount-desktop.jpg 1x, img/bike-mount-desktop@2x.jpg 2x' width='342' height='566' alt='Горный велосипед'>
-                </picture>
-                <figcaption>Горный велосипед</figcaption>
-              </figure>
-            </li>
-            <li class='types__item'>
-              <figure class='types__figure'>
-                <picture>
-                  <source type='image/webp' media='(max-width: 1023px)' srcset='img/bike-child-nodesktop.webp 1x, img/bike-child-nodesktop@2x.webp 2x'>
-                  <source type='image/webp' media='(min-width: 1024px)' srcset='img/bike-child-desktop.webp 1x, img/bike-child-desktop@2x.webp 2x'>
-                  <!-- 1х: 270px; 2x:540px -->
-                  <source media='(max-width: 1023px)' srcset='img/bike-child-nodesktop.jpg 1x, img/bike-child-nodesktop@2x.jpg 2x'>
-                  <!-- 1х: 342px; 2x:684px -->
-                  <img src='img/bike-child-desktop.jpg' srcset='img/bike-child-desktop.jpg 1x, img/bike-child-desktop@2x.jpg 2x' width='342' height='513' alt='Дорожный велосипед'>
-                </picture>
-                <figcaption>Детский велосипед</figcaption>
-              </figure>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class='video' id='bike-video'>
-        <div class='video__wrapper'>
-          <h2>Видео про велосипеды</h2>
-          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-          <div class='video__content'>
-            <picture>
-              <source type='image/webp' media='(max-width: 767px)' srcset='img/preview-bike-mobile.webp 1x, img/preview-bike-mobile@2x.webp 2x'>
-              <source type='image/webp' media='(max-width: 1023px)' srcset='img/preview-bike-laptop.webp 1x, img/preview-bike-laptop@2x.webp 2x'>
-              <source type='image/webp' media='(min-width: 1024px)' srcset='img/preview-bike-desktop.webp 1x, img/preview-bike-desktop@2x.webp 2x'>
-              <!-- 1х: 288px; 2x:576px -->
-              <source media='(max-width: 767px)' srcset='img/preview-bike-mobile.png 1x, img/preview-bike-mobile@2x.png 2x'>
-              <source media='(max-width: 1023px)' srcset='img/preview-bike-laptop.png 1x, img/preview-bike-laptop@2x.png 2x'>
-              <!-- 1х: 503px; 2x: 1006px -->
-              <img src='img/preview-bike-desktop.png' srcset='img/preview-bike-desktop.png 1x, img/preview-bike-desktop@2x.png 2x' width='929' height='522' alt='Превью для видео про велосипеды'>
-            </picture>
-            <button class='video__button' type='button' aria-label='Кнопка запуска видео'>
-              <svg width='65' height='65'>
-                <use xlink:href='#sprite-play'></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
-  <footer class='footer'>
-      <section class='address' id='contact-us'>
-        <h2>Как нас найти?</h2>
-        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-        <div class='address__map-wrapper' aria-label='улица Большая Конюшенная, дом 19, город Санкт-Петербург'></div>
-      </section>
-      <section class='contacts'>
-        <h2 class='visually-hidden'>Наши Koнтакты</h2>
-        <ul class='contacts__list'>
-          <li class='contacts__item'><a class='contacts__link' href='mailto:puteshestviemechta@gmail.ru'>
-            <svg width='26' height='20'>
-              <use xlink:href='#sprite-mail'></use>
-            </svg>
-            puteshestviemechta@gmail.ru</a></li>
-          <li class='contacts__item contacts__item--phone'><a class='contacts__link' href='tel:+749978468446'>
-            <svg width='22' height='24'>
-              <use xlink:href='#sprite-phone'></use>
-            </svg>
-            +7 (499)-784-684-46</a></li>
-        </ul>
-      </section>
-  </footer>
-</div>
+      </div>
+    </section>
+    <section class='address' id='contact-us'>
+      <h2>Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <div class='address__map-wrapper' aria-label='улица Большая Конюшенная, дом 19, город Санкт-Петербург'></div>
+    </section>
+    <section class='contacts'>
+      <h2 class='visually-hidden'>Наши Koнтакты</h2>
+      <ul class='contacts__list'>
+        <li class='contacts__item'><a class='contacts__link' href='mailto:puteshestviemechta@gmail.ru'>
+          <svg width='26' height='20'>
+            <use xlink:href='#sprite-mail'></use>
+          </svg>
+          puteshestviemechta@gmail.ru</a></li>
+        <li class='contacts__item contacts__item--phone'><a class='contacts__link' href='tel:+749978468446'>
+          <svg width='22' height='24'>
+            <use xlink:href='#sprite-phone'></use>
+          </svg>
+          +7 (499)-784-684-46</a></li>
+      </ul>
+    </section>
+  </main>
+
 <script src='js/vendor.js'></script>
 <script src='js/main.js'></script>
 </body>

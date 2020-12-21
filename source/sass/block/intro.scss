@@ -1,5 +1,53 @@
 .intro {
-  padding: 0;
+  margin-top: 17%;
+
+  @media (max-width: $width-desktop) {
+    background-image: url("../img/bg-bike-laptop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-position: center top;
+    margin: 0 0 7.7%;
+    position: relative;
+    padding: 14.3% 0 10%;
+  }
+
+  @media (max-width: $width-laptop) {
+    background-image: url("../img/bg-bike-mobile.png");
+    padding: 17.3% 16px 22%;
+    margin: 0 0 22%;
+  }
+}
+
+@media (max-width: $width-desktop) and (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+  .intro {
+    background-image: url("../img/bg-bike-laptop@2x.png");
+  }
+}
+
+@media (max-width: $width-laptop) and (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+  .intro {
+    background-image: url("../img/bg-bike-mobile@2x.png");
+  }
+}
+
+.intro__wrapper {
+  @media (max-width: $width-desktop) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 0 4%;
+    margin: 0 auto;
+  }
+}
+
+.intro__logo {
+  display: block;
+
+  @media (max-width: $width-desktop) {
+    display: none;
+  }
 }
 
 .intro__content {
@@ -24,7 +72,7 @@
     @include text-sets(20px,32px,300);
     color: rgba(#ffffff, 0.8);
     min-width: 300px;
-    width: 67%;
+    width: 66%;
 
     @media (max-width: $width-desktop) {
       font-size: 18px;
@@ -32,7 +80,7 @@
   }
 
   @media (max-width: $width-desktop) {
-    margin-bottom: 17%;
+    margin-bottom: 0;
 
     h1 {
       text-align: center;
@@ -45,87 +93,12 @@
   }
 
   @media (max-width: $width-laptop) {
-    margin-bottom: 49%;
     width: 100%;
-  }
-}
+    margin: 26% auto 0;
 
-.intro__wrapper {
-  display: flex;
-  width: 61%;
-  max-width: 1550px;
-  margin: 0 auto;
-  padding-top: 17.3%;
-  padding-bottom: 26%;
-  justify-content: space-around;
-
-  @media (max-width: $width-desktop) {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    padding-top: 7.3%;
-    padding-bottom: 9.8%;
-  }
-
-  @media (max-width: $width-laptop) {
-    padding: 14.3% 16px 22%;
-  }
-}
-
-.intro__logo {
-  display: block;
-
-  @media (max-width: $width-desktop) {
-    display: none;
-  }
-}
-
-.intro__form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  padding-left: 20px;
-  box-sizing: border-box;
-  min-width: 300px;
-  max-width: 600px;
-
-  p {
-    text-align: center;
-
-    @include text-sets(17px,28px,600);
-    color: #ffffff;
-    margin-top: 8px;
-    margin-bottom: 25px;
-
-    @media (max-width: $width-desktop) {
-      color: #000000;
-      font-size: 18px;
-      margin: 11px 47px 34px 29px;
+    p {
+      min-width: unset;
+      width: auto;
     }
-
-    @media (max-width: $width-laptop) {
-      margin: 0 0 7%;
-    }
-  }
-
-  @media (max-width: $width-desktop) {
-    width: 56%;
-  }
-
-  @media (max-width: $width-laptop) {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-.intro__application {
-  @media (max-width: $width-desktop) {
-    margin-left: 36px;
-    margin-right: 53px;
-  }
-
-  @media (max-width: $width-laptop) {
-    margin: 0 7px;
   }
 }

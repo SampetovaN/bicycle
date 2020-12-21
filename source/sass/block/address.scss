@@ -12,11 +12,14 @@
     color: #1f1f1f;
     margin-bottom: 1.2%;
     margin-right: 1%;
+    text-align: center;
+    width: 63%;
 
     @media (max-width: $width-desktop) {
       font-size: 24px;
       margin-right: 0;
-      margin-bottom: 1.2%;
+      margin-bottom: 0.4%;
+      width: auto;
     }
 
     @media (max-width: $width-laptop) {
@@ -74,7 +77,7 @@
   @media (max-width: $width-laptop) {
     background-image: url("../img/bg-map-mobile.png");
     height: 250px;
-    margin-bottom: 9%;
+    margin-bottom: 10%;
   }
 }
 

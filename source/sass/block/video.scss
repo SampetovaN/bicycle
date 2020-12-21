@@ -9,9 +9,12 @@
     @include text-sets(30px, 30px, 600);
     color: #ffffff;
     margin-bottom: 0.2%;
+    text-align: center;
+    width: 40%;
 
     @media (max-width: $width-desktop) {
       font-size: 24px;
+      width: auto;
     }
 
     @media (max-width: $width-laptop) {

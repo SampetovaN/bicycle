@@ -1,49 +1,23 @@
 .header {
-  position: relative;
   margin: 0 auto;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/bg-bike-desktop.png");
-    background-repeat: no-repeat;
-    background-color: #000000;
-    background-size: cover;
-    width: 100vw;
-    height: 58vw;
-    max-height: 825px;
-    right: 0;
-    left: auto;
-    top: 0;
-    z-index: -1;
-
-    @media (max-width: $width-desktop) {
-      background-image: url("../img/bg-bike-laptop.png");
-      width: 100%;
-      left: 0;
-      height: 44vw;
-      max-height: 345px;
-    }
-
-    @media (max-width: $width-laptop) {
-      background-image: url("../img/bg-bike-mobile.png");
-      left: 0;
-      height: 100vw;
-      min-height: 390px;
-    }
-  }
-
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  min-width: $width-mobile;
+  z-index: 1;
 
   &--nojs {
     @media (max-width: $width-desktop) {
+      position: static;
+
       .main-nav__toggle,
-      .main-nav__toggle-list {
+      .main-nav__toggle-list,
+      .main-nav__logo {
         display: none;
         margin: 0;
         width: 0;
         height: 0;
       }
-
 
       .main-nav__wrapper {
         display: block;
@@ -60,41 +34,8 @@
         min-height: 852px;
       }
     }
-
-    @media (max-width: $width-desktop) {
-      .main-nav__nav-list {
-        margin: 0;
-        padding: 8% 0 4%;
-      }
-    }
   }
 }
-
-
-@media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-  .header {
-    &::after {
-      background-image: url("../img/bg-bike-desktop@2x.png");
-    }
-  }
-}
-
-@media (max-width: $width-desktop) and (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-  .header {
-    &::after {
-      background-image: url("../img/bg-bike-laptop@2x.png");
-    }
-  }
-}
-
-@media (max-width: $width-laptop) and (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-  .header {
-    &::after {
-      background-image: url("../img/bg-bike-mobile@2x.png");
-    }
-  }
-}
-
 
 .header__wrapper {
   @media (max-width: $width-desktop) {

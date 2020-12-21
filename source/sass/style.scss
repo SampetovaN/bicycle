@@ -4,11 +4,11 @@
 @import "mixins.scss";
 @import "global.scss";
 @import "block/visually-hidden.scss";
-@import "block/content.scss";
 @import "block/button.scss";
 @import "block/header.scss";
 @import "block/main-nav.scss";
 @import "block/site-list.scss";
+@import "block/common.scss";
 @import "block/intro.scss";
 @import "block/form.scss";
 @import "block/about.scss";
@@ -16,4 +16,3 @@
 @import "block/video.scss";
 @import "block/address.scss";
 @import "block/contacts.scss";
-@import "block/footer.scss";

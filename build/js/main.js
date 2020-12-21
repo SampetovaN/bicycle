@@ -1,5 +1,6 @@
 'use strict';
 
+
 (function () {
   var inputPhone = document.querySelector('#user-phone');
   if (inputPhone) {
@@ -16,6 +17,7 @@
     });
   }
 })();
+
 
 
 (function () {
@@ -52,6 +54,8 @@
     document.addEventListener('keydown', onEscKeyDown);
   }
 })();
+
+
 
 (function () {
   var ESCAPE_BUTTON = 'Escape';
