@@ -35,7 +35,7 @@
       margin-left: 10px;
       margin-right: 10px;
       width: 94%;
-      margin-bottom: 8%;
+      margin-bottom: 10%;
     }
 
     @media (max-width: $width-laptop) {
@@ -56,7 +56,6 @@
   margin: 0 auto 8.4%;
 
   @media (max-width: $width-desktop) {
-    width: 66%;
     margin-bottom: 5.4%;
   }
 
@@ -94,9 +93,9 @@
   right: 0;
   bottom: 0;
   z-index: 5;
-  margin: auto;
   height: 68px;
   width: 75px;
+  margin: auto;
   display: block;
 
   @include set-opacity-button;
