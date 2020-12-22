@@ -4,6 +4,8 @@
   @media (max-width: $width-desktop) {
     background-color: $background-color;
     position: absolute;
+    top: 0;
+    left: 0;
 
     &--opened {
       display: block;

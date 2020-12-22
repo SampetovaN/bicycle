@@ -416,7 +416,9 @@ input[type="radio"],
   @media (max-width: 1023px) {
     .main-nav__wrapper {
       background-color: #ffffff;
-      position: absolute; }
+      position: absolute;
+      top: 0;
+      left: 0; }
       .main-nav__wrapper--opened {
         display: block; }
       .main-nav__wrapper--closed {
