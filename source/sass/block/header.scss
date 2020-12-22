@@ -33,8 +33,15 @@
         height: 90vw;
         min-height: 852px;
       }
+
       .site-list {
-        padding-top: 31.3%;
+        @media (max-width: $width-desktop) {
+          padding-top: 14%;
+        }
+
+        @media (max-width: $width-laptop) {
+          padding-top: 31.3%;
+        }
       }
     }
   }

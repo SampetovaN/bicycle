@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 40%;
-  padding-left: 20px;
+  padding-left: 22px;
   box-sizing: border-box;
   min-width: 300px;
   max-width: 600px;
@@ -32,7 +32,7 @@
     max-width: none;
     padding: 0 9%;
     width: 61%;
-    margin: 0 auto 9.3%;
+    margin: 0 auto 9.4%;
   }
 
   @media (max-width: $width-laptop) {
@@ -53,17 +53,25 @@
 }
 
 .form__field {
-  margin-bottom: 7%;
+  margin-bottom: 4.5%;
 
   input {
     cursor: pointer;
     border: 1px solid #c9ccd4;
     border-radius: 4px;
-    padding-left: 29px;
+    padding-left: 33px;
     padding-top: 14px;
     padding-bottom: 13px;
     width: 100%;
     box-sizing: border-box;
+
+    &:hover,
+    &:focus {
+      border: 2px solid #09c3b2;
+      padding-left: 32px;
+      padding-top: 13px;
+      padding-bottom: 12px;
+    }
 
     &::placeholder {
       @include text-sets(15px,24px,normal);
@@ -71,17 +79,32 @@
     }
 
     @media (max-width: $width-desktop) {
-      padding-left: 19px;
-      padding-bottom: 14px;
+      padding-left: 21px;
+      padding-bottom: 10px;
+
+      &:hover,
+      &:focus {
+        padding-left: 20px;
+        padding-bottom: 9px;
+      }
     }
 
     @media (max-width: $width-laptop) {
       padding-left: 22px;
+
+      &:hover,
+      &:focus {
+        padding-left: 21px;
+      }
     }
   }
 
+  @media (max-width: $width-desktop) {
+    margin-bottom: 5.5%;
+  }
+
   @media (max-width: $width-laptop) {
-    margin-bottom: 8.1%;
+    margin-bottom: 6.1%;
   }
 }
 

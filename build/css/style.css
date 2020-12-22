@@ -137,8 +137,14 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  line-height: 1.15;
+  /* 1 */
   margin: 0;
   /* 2 */ }
+
+input {
+  line-height: 1.75;
+  /* 1 */ }
 
 /**
  * Show the overflow in IE.
@@ -393,9 +399,13 @@ input[type="radio"],
       .header--nojs::after {
         max-height: none;
         height: 90vw;
-        min-height: 852px; }
-      .header--nojs .site-list {
-        padding-top: 31.3%; } }
+        min-height: 852px; } }
+  @media (max-width: 1023px) and (max-width: 1023px) {
+    .header--nojs .site-list {
+      padding-top: 14%; } }
+  @media (max-width: 1023px) and (max-width: 767px) {
+    .header--nojs .site-list {
+      padding-top: 31.3%; } }
 
 @media (max-width: 1023px) {
   .header__wrapper {
@@ -510,7 +520,7 @@ input[type="radio"],
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       margin: 0;
-      padding: 14% 0; } }
+      padding: 14% 0 1%; } }
   @media (max-width: 767px) {
     .site-list {
       padding: 14.3% 0 32%; } }
@@ -680,7 +690,7 @@ input[type="radio"],
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40%;
-  padding-left: 20px;
+  padding-left: 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 300px;
@@ -709,7 +719,7 @@ input[type="radio"],
       max-width: none;
       padding: 0 9%;
       width: 61%;
-      margin: 0 auto 9.3%; } }
+      margin: 0 auto 9.4%; } }
   @media (max-width: 767px) {
     .form {
       width: 100%;
@@ -725,17 +735,22 @@ input[type="radio"],
     margin: 0 7px; } }
 
 .form__field {
-  margin-bottom: 7%; }
+  margin-bottom: 4.5%; }
   .form__field input {
     cursor: pointer;
     border: 1px solid #c9ccd4;
     border-radius: 4px;
-    padding-left: 29px;
+    padding-left: 33px;
     padding-top: 14px;
     padding-bottom: 13px;
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
+    .form__field input:hover, .form__field input:focus {
+      border: 2px solid #09c3b2;
+      padding-left: 32px;
+      padding-top: 13px;
+      padding-bottom: 12px; }
     .form__field input::-webkit-input-placeholder {
       font-size: 15px;
       line-height: 24px;
@@ -763,14 +778,22 @@ input[type="radio"],
       color: rgba(28, 28, 28, 0.6); }
     @media (max-width: 1023px) {
       .form__field input {
-        padding-left: 19px;
-        padding-bottom: 14px; } }
+        padding-left: 21px;
+        padding-bottom: 10px; }
+        .form__field input:hover, .form__field input:focus {
+          padding-left: 20px;
+          padding-bottom: 9px; } }
     @media (max-width: 767px) {
       .form__field input {
-        padding-left: 22px; } }
+        padding-left: 22px; }
+        .form__field input:hover, .form__field input:focus {
+          padding-left: 21px; } }
+  @media (max-width: 1023px) {
+    .form__field {
+      margin-bottom: 5.5%; } }
   @media (max-width: 767px) {
     .form__field {
-      margin-bottom: 8.1%; } }
+      margin-bottom: 6.1%; } }
 
 .form__button {
   display: block;
@@ -927,14 +950,15 @@ input[type="radio"],
   margin-bottom: 0; }
   @media (max-width: 1023px) {
     .types__list {
-      padding: 0 2% 3%; } }
+      padding: 0 2% 3.2%; } }
   @media (max-width: 767px) {
     .types__list {
       padding: 0;
       margin: 0 auto; } }
 
 .types__image-wrapper {
-  position: relative; }
+  position: relative;
+  margin-right: 0.5%; }
 
 .types__item {
   margin-top: 34px;
@@ -955,7 +979,7 @@ input[type="radio"],
         max-width: 288px; } }
     @media (max-width: 767px) {
       .types__item figcaption {
-        margin-top: 21px; } }
+        margin-top: 22px; } }
   .types__item img {
     display: block; }
     @media (max-width: 1023px) {
@@ -1241,12 +1265,12 @@ input[type="radio"],
       background-image: url("../img/bg-map-laptop.png");
       width: 100%;
       height: 545px;
-      margin-bottom: 3.1%; } }
+      margin-bottom: 3.4%; } }
   @media (max-width: 767px) {
     .address__map-wrapper {
       background-image: url("../img/bg-map-mobile.png");
       height: 250px;
-      margin-bottom: 10%; } }
+      margin-bottom: 9%; } }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) and (min-resolution: 144dpi) {
   .address__map-wrapper {

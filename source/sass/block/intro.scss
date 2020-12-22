@@ -40,9 +40,11 @@
     padding: 0 4%;
     margin: 0 auto;
   }
+
   @media (max-width: $width-laptop) {
     margin-top: 24%;
   }
+
   h1 {
     @include text-sets(46px,64px,bold);
     color: #ffffff;
@@ -70,6 +72,7 @@
       text-align: center;
       margin: 0 auto;
     }
+
     @media (max-width: $width-laptop) {
       min-width: unset;
       width: auto;

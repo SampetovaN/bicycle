@@ -42,7 +42,7 @@
   margin-bottom: 0;
 
   @media (max-width: $width-desktop) {
-    padding: 0 2% 3%;
+    padding: 0 2% 3.2%;
   }
 
   @media (max-width: $width-laptop) {
@@ -53,6 +53,7 @@
 
 .types__image-wrapper {
   position: relative;
+  margin-right: 0.5%;
 }
 
 .types__item {
@@ -76,12 +77,13 @@
     }
 
     @media (max-width: $width-laptop) {
-      margin-top: 21px;
+      margin-top: 22px;
     }
   }
 
   img {
     display: block;
+
     @media (max-width: $width-desktop) {
       height: 300px;
       width: 270px;
@@ -92,7 +94,6 @@
 
   &:nth-child(3n+1) {
     .types__image-wrapper {
-
       &::before {
         content: "";
         position: absolute;
@@ -111,6 +112,7 @@
 
     @media (max-width: $width-desktop) {
       margin-top: 1%;
+
       .types__image-wrapper {
         &::before {
           transform: scale(0.7);
@@ -125,6 +127,7 @@
 
     @media (max-width: $width-laptop) {
       margin-top: 1%;
+
       .types__image-wrapper {
         &::before {
           width: 64%;
@@ -136,6 +139,7 @@
 
   &:nth-child(3n + 2) {
     margin-top: 5.3%;
+
     .types__image-wrapper {
       &::before,
       &::after {
@@ -163,8 +167,10 @@
 
     @media (max-width: $width-desktop) {
       margin-top: 1%;
+
       .types__image-wrapper {
         position: static;
+
         &::before,
         &::after {
           position: static;
@@ -176,6 +182,7 @@
 
   &:nth-child(3n + 3) {
     margin-top: 2%;
+
     .types__image-wrapper {
       &::before {
         content: "";
@@ -194,6 +201,7 @@
 
     @media (max-width: $width-desktop) {
       margin-top: 1%;
+
       .types__image-wrapper {
         &::before {
           transform: scale(0.39);
@@ -201,13 +209,13 @@
           top: -26%;
           width: 67%;
           height: 60%;
-
         }
       }
     }
 
     @media (max-width: $width-laptop) {
       margin-top: 1%;
+
       .types__image-wrapper {
         &::before {
           left: 58%;
