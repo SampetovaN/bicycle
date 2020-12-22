@@ -35,14 +35,16 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
-    "testJs": "eslint source/js/",
-    "fixJs": "eslint source/js/ --fix",
-    "test": "npm run editorconfig && npm run stylelint && npm run testJs",
+    "eslint": "eslint source/js/",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint",
     "build": "gulp build",
-    "start": "gulp start"
+    "start": "gulp start",
+    "image": "gulp image",
+    "sprite": "gulp sprite"
   },
   "browserslist": [
-    "last 3 versions",
+    "last 2 versions",
+    "IE 11",
     "Firefox ESR"
   ],
   "editorconfig-cli": [
@@ -51,7 +53,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
     "node": "8.16"

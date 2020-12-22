@@ -20,17 +20,19 @@
     var onClickButtonCloseMenu = function () {
       menu.classList.remove(OPENED_MENU);
       menu.classList.add(CLOSED_MENU);
+      buttonOpenMenu.focus();
       buttonOpenMenu.addEventListener('click', onClickButtonOpenMenu);
       document.removeEventListener('keydown', onEscKeyDown);
     };
     var onClickButtonOpenMenu = function () {
       menu.classList.remove(CLOSED_MENU);
       menu.classList.add(OPENED_MENU);
+      buttonCloseMenu.focus();
       buttonCloseMenu.addEventListener('click', onClickButtonCloseMenu);
       document.addEventListener('keydown', onEscKeyDown);
     };
 
     buttonOpenMenu.addEventListener('click', onClickButtonOpenMenu);
-    document.addEventListener('keydown', onEscKeyDown);
   }
+
 })();

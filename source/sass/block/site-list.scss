@@ -12,7 +12,7 @@
   }
 
   @media (max-width: $width-laptop) {
-    padding: 14.3% 0 43%;
+    padding: 14.3% 0 32%;
   }
 }
 
@@ -38,6 +38,7 @@
     @include text-sets(20px, 28px, 400);
     position: relative;
     z-index: 5;
+    margin-bottom: 9%;
 
     a {
       display: flex;
@@ -45,7 +46,7 @@
       background-color: #e5e5e5;
 
       @include set-hover(#48494d);
-      padding: 17px 11% 17px 16px;
+      padding: 17px 11vw 17px 16px;
       box-sizing: border-box;
     }
 
@@ -54,13 +55,13 @@
       position: absolute;
       background-image: url("../img/arrow-right.svg");
       background-repeat: no-repeat;
-      width: 25px;
-      height: 25px;
+      width: 10px;
+      height: 15px;
       bottom: 0;
       left: 90%;
       right: 0;
       z-index: 1;
-      top: 31%;
+      top: 37%;
     }
 
     &:hover,
