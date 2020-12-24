@@ -962,7 +962,7 @@ input[type="radio"],
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 1% 12.3%;
+  padding: 0 1% 11% 1.4%;
   margin-bottom: 0; }
   @media (max-width: 1023px) {
     .types__list {
@@ -978,7 +978,8 @@ input[type="radio"],
 
 .types__item {
   margin-top: 34px;
-  z-index: 1; }
+  z-index: 1;
+  padding: 0 2% 1.5%; }
   .types__item figure {
     margin: 0; }
   .types__item figcaption {
