@@ -8,6 +8,7 @@
   var OPENED_MENU = 'main-nav__wrapper--opened';
   var CLOSED_MENU = 'main-nav__wrapper--closed';
   var NOJS_TAG = 'header--nojs';
+
   if (header) {
     header.classList.remove(NOJS_TAG);
   }

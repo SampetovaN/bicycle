@@ -16,7 +16,6 @@
   <include src='build/img/sprite.svg'></include>
 </div>
 <div class='content'>
-  <div class='content__main'>
   <header class='header header--nojs'>
     <div class='header__wrapper'>
     <nav class='main-nav'>
@@ -65,7 +64,7 @@
         <form class='form__application' action='#'>
           <div class='form__field'>
             <label class='visually-hidden' for='user-name'>Ваше имя:</label>
-            <input type='text' name='email' id='user-name' placeholder='Введите Ваше Имя' required>
+            <input type='text' name='name' id='user-name' placeholder='Введите Ваше Имя' required>
           </div>
           <div class='form__field'>
             <label class='visually-hidden' for='user-phone'>Ваш номер телефона:</label>
@@ -168,12 +167,12 @@
       </div>
     </section>
   </main>
-  </div>
   <footer class='footer content__footer'>
     <section class='address' id='contact-us'>
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <div class='address__map-wrapper' aria-label='улица Большая Конюшенная, дом 19, город Санкт-Петербург'></div>
+      <span class='visually-hidden'>улица Большая Конюшенная, дом 19, город Санкт-Петербург</span>
+      <div class='address__map-wrapper'></div>
     </section>
     <section class='contacts'>
       <h2 class='visually-hidden'>Наши Koнтакты</h2>
