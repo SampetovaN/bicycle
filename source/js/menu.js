@@ -8,6 +8,7 @@
   var OPENED_MENU = 'main-nav__wrapper--opened';
   var CLOSED_MENU = 'main-nav__wrapper--closed';
   var NOJS_TAG = 'header--nojs';
+  var MENUOPENED_TAG = 'header--menu-opened';
 
   if (header) {
     header.classList.remove(NOJS_TAG);
@@ -24,6 +25,7 @@
       buttonOpenMenu.focus();
       buttonOpenMenu.addEventListener('click', onClickButtonOpenMenu);
       document.removeEventListener('keydown', onEscKeyDown);
+      header.classList.remove(MENUOPENED_TAG);
     };
     var onClickButtonOpenMenu = function () {
       menu.classList.remove(CLOSED_MENU);
@@ -31,6 +33,7 @@
       buttonCloseMenu.focus();
       buttonCloseMenu.addEventListener('click', onClickButtonCloseMenu);
       document.addEventListener('keydown', onEscKeyDown);
+      header.classList.add(MENUOPENED_TAG);
     };
 
     buttonOpenMenu.addEventListener('click', onClickButtonOpenMenu);
