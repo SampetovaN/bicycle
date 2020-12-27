@@ -45,12 +45,6 @@
       }
     }
   }
-
-  &--menu-opened {
-    @media (max-width: $width-desktop) {
-      position: static;
-    }
-  }
 }
 
 .header__wrapper {

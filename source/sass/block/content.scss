@@ -3,6 +3,18 @@
   flex-direction: column;
   position: relative;
   min-height: 100%;
+
+  &--menu-opened {
+    @media (max-width: $width-desktop) {
+      .header {
+        position: static;
+      }
+
+      .types__item {
+        z-index: 0;
+      }
+    }
+  }
 }
 
 .content__footer {

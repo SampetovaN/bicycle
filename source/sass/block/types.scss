@@ -28,7 +28,7 @@
   }
 
   @media (max-width: $width-laptop) {
-    padding: 9% 1% 5%;
+    padding: 9% 0 3%;
   }
 }
 
@@ -38,11 +38,11 @@
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 0 1% 11% 1.4%;
+  padding: 0 1% 12% 1.4%;
   margin-bottom: 0;
 
   @media (max-width: $width-desktop) {
-    padding: 0 2% 3.2%;
+    padding: 0 2% 2.2%;
   }
 
   @media (max-width: $width-laptop) {
@@ -59,7 +59,7 @@
 .types__item {
   margin-top: 34px;
   z-index: 1;
-  padding: 0 2% 1.5%;
+  padding: 0 2% 0.4%;
 
   figure {
     margin: 0;
