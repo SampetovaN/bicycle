@@ -1,19 +1,19 @@
 'use strict';
 
 (function () {
+  var OPENED_MENU = 'main-nav__wrapper--opened';
+  var CLOSED_MENU = 'main-nav__wrapper--closed';
+  var NOJS_TAG = 'header--nojs';
+  var MENUOPENED_TAG = 'content--menu-opened';
+  var NEGATIVE_TABINDEX = -1;
+  var COMMON_TABINDEX = 0;
   var header = document.querySelector('.header');
   var content = document.querySelector('.content');
   var buttonOpenMenu = document.querySelector('.main-nav__toggle');
   var buttonCloseMenu = document.querySelector('.main-nav__toggle-list');
   var menu = document.querySelector('.main-nav__wrapper');
-  var OPENED_MENU = 'main-nav__wrapper--opened';
-  var CLOSED_MENU = 'main-nav__wrapper--closed';
-  var NOJS_TAG = 'header--nojs';
-  var MENUOPENED_TAG = 'content--menu-opened';
   var nonMenuInteractiveItems = document.querySelectorAll('input, .main a, .main button, .footer a, .footer button');
   var menuLinks = document.querySelectorAll('.main-nav a');
-  var NEGATIVE_TABINDEX = -1;
-  var COMMON_TABINDEX = 0;
 
   if (header) {
     header.classList.remove(NOJS_TAG);
