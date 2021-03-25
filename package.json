@@ -14,6 +14,7 @@
     "gulp": "4.0.x",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^4.0.1",
+    "gulp-html-bem-validator": "^1.0.5",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
@@ -24,6 +25,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "2.6.x",
     "gulp-svgstore": "^7.0.1",
+    "gulp-w3c-html-validator": "^2.0.1",
     "gulp-webp": "^4.0.1",
     "gulp-wrapper": "^1.0.0",
     "posthtml-include": "^1.6.0",
@@ -40,7 +42,8 @@
     "build": "gulp build",
     "start": "gulp start",
     "image": "gulp image",
-    "sprite": "gulp sprite"
+    "sprite": "gulp sprite",
+    "htmlValidate": "gulp htmlValidate"
   },
   "browserslist": [
     "last 2 versions",

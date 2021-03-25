@@ -18,6 +18,8 @@ var concat = require('gulp-concat');
 var wrapper = require('gulp-wrapper');
 var replace = require('gulp-replace');
 var webp = require('gulp-webp');
+var htmlValidator = require('gulp-w3c-html-validator');
+var bemValidator = require('gulp-html-bem-validator');
 
 gulp.task('clean', function () {
   return del('build');
@@ -50,22 +52,22 @@ gulp.task('copy', function () {
     'source/img/**',
     '!source/img/sprite-*.svg',
   ], {
-    base: 'source'
+    base: 'source',
   })
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task('vendor', function () {
   return gulp.src('source/js/vendor.js')
-    .pipe(gulp.dest('build/js'))
+    .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('script', function () {
-  return gulp.src(['source/js/*.js','!source/js/vendor.js'])
+  return gulp.src(['source/js/*.js', '!source/js/vendor.js'])
     .pipe(replace(/['']use strict[''];/g, ''))
     .pipe(concat('main.js'))
-    .pipe(wrapper({ header: '\'use strict\';\n' }))
-    .pipe(gulp.dest('build/js'))
+    .pipe(wrapper({header: '\'use strict\';\n'}))
+    .pipe(gulp.dest('build/js'));
 });
 
 
@@ -81,7 +83,7 @@ gulp.task('css', function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
     ]))
     .pipe(gulp.dest('build/css'))
     .pipe(csso())
@@ -97,7 +99,7 @@ gulp.task('server', function () {
     notify: false,
     open: true,
     cors: true,
-    ui: false
+    ui: false,
   });
 
   gulp.watch('source/sass/**/*.scss', gulp.series('css'));
@@ -109,6 +111,13 @@ gulp.task('server', function () {
 gulp.task('refresh', function (done) {
   server.reload();
   done();
+});
+
+gulp.task('htmlValidate', function () {
+  return gulp.src('build/*.html')
+    .pipe(htmlValidator({skipWarnings: true}))
+    .pipe(htmlValidator.reporter())
+    .pipe(bemValidator());
 });
 
 gulp.task('build', gulp.series('clean', 'sprite', 'copy', 'css', 'vendor', 'script', 'html'));
